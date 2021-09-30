@@ -6,7 +6,7 @@
             <b-form-group id="input-group-2" label="Your Name:" label-for="input-2" class="item">
                 <b-form-input
                 id="input-2"
-                v-model.trim="form.name"
+                v-model="form.name"
                 placeholder="Enter name"
                 required
                 ></b-form-input>
@@ -15,7 +15,7 @@
             <b-form-group id="input-group-2" label="Your Phone:" label-for="input-2" class="item">
                 <b-form-input
                 id="input-2"
-                v-model.number="form.phone"
+                v-model="form.phone"
                 placeholder="Enter Phone"
                 required
                 ></b-form-input>
@@ -29,7 +29,7 @@
             >
                 <b-form-input
                 id="input-1"
-                v-model.trim="form.address"
+                v-model="form.address"
                 placeholder="Enter address"
                 required
                 ></b-form-input>
@@ -59,7 +59,7 @@ export default {
   methods: {
     onSubmit(event) {
       event.preventDefault();
-      this.$swal('Hello Vue world!!!');
+      this.$swal('成功');
     },
     onReset(event) {
       event.preventDefault();
